@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+body {
+  background-color: #EEEEEE;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 35px;
+  color: #041562;
+  text-shadow: 2px 2px #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.conteiner-operator {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 20px;
+}
+
+.chosen {
+  border: none;
+  background-color: #EEEEEE;
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  color: #041562;
+  text-shadow: 2px 2px #fff;
+  text-align: center;
+  cursor: pointer;
+} 
+
+.form {
+  width: 25%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.form-block-one {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+  font-family: 'Rubik', sans-serif;
+  margin-left: 30px;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.form-block-two {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 50px ;
+}
+
+label {
+  font-family: 'Rubik', sans-serif;
+  margin: 10px;
+  font-size: 20px;
+}
+
+input {
+  padding: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  border: solid 3px #11468F;
+  text-align: center;
+}
+
+.btn-payment {
+  background-color: #11468F;
+  padding: 10px;
+  width: 75%;
+  font-family: 'Rubik', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.errorPhone {
+  color: red;
+  font-size: 15px;
+  margin-top: 3px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.errorAmount {
+  color: red;
+  font-size: 15px;
+  margin-top: 3px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.swal-text {
+  font-size: 30px;
+  font-family: 'Rubik', sans-serif;
+  color: black;
+}
+
+.swal-icon--success__ring {
+  border: 4px solid hsl(98deg 65% 33% / 89%);
+}
+
+.swal-button {
+  background-color: #11468F;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  border-radius: 0px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 30px;
+}
+
+@media all and (max-width: 800px) {
+  .form {
+    width: 50%;
   }
 }
+
+@media all and (max-width: 500px) {
+  .form {
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .conteiner-operator {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+
+  .chosen {
+    font-size: 20px;
+  }
+
+  img {
+    width: 70px;
+    margin-top: 10px;
+  }
+
+  .form-block-two {
+    margin: 20px 10px ;
+  }
+
+  .btn-payment {
+    width: 95%;
+  }
+
+  .swal-text {
+    font-size: 25px;
+  }
+  
+}
+
