@@ -72,7 +72,7 @@ function Payment() {
 
     const showPhoneMessage = () => {
         if (phoneError === false) {
-            setPhoneErrorMessage('Номер телефона не верный')
+            setPhoneErrorMessage('Номер телефона неверный')
         }
         else {
             setPhoneErrorMessage('')
