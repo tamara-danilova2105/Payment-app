@@ -36,7 +36,7 @@ function Payment() {
         phoneChange();
         
         const validatePhone = () => {
-            if (phone < 80000000000) {
+            if (phone < 80000000000 || phone > 89999999999) {
                 setPhoneError(false)
             }
             else {
