@@ -1,8 +1,7 @@
-import icon from './media/icon.png'
 import { useState, useRef, useEffect } from 'react'
 import swal from 'sweetalert'
 
-function Payment() {
+function Payment({imagesOperotor, nameOperator}) {
     const [phone , setPhone ] = useState()
     const [amount, setAmount] = useState()
     
@@ -97,6 +96,7 @@ function Payment() {
             swal({
                 icon: "success",
                 text: "Оплата прошла успешно!",
+                timer: 3000
             });
         }
         else{
@@ -108,8 +108,8 @@ function Payment() {
         <div className='container'>
             <form onSubmit={Payment} className='form'>
                 <div className='form-block-one'>
-                    <img src={icon} alt='иконка' width='70px' />
-                    <h3>Название оператора</h3>
+                    <img src={imagesOperotor} alt='иконка' width='70px' height='70px' />
+                    <h3>{nameOperator}</h3>
                 </div>
                 <div className='form-block-two'>
                     <label>Номер телефона:</label>
